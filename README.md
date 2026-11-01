@@ -1,48 +1,33 @@
 # SECOM-manufacturing-failure-prediction
-An experimental machine learning project exploring semiconductor manufacturing failure prediction using sensor data from the UCI SECOM dataset.
+An experimental machine learning project using the UCI SECOM dataset to predict semiconductor manufacturing failures from high-dimensional sensor data.
 
-Technologies
+🛠 Tech Stack
 
-Python
+Python: Pandas, NumPy, Scikit-learn, Imbalanced-learn, Matplotlib
 
-Pandas, NumPy
+⚙️ Workflow
 
-Scikit-learn
+Data Preprocessing: Handled missing values and applied RobustScaler.
 
-Imbalanced-learn
+Imbalance Handling: Applied SMOTE for minority class oversampling.
 
-Matplotlib
+Classification: Trained a Logistic Regression baseline model tuned with GridSearchCV.
 
-Workflow
+Evaluation: Evaluated performance focused on Precision, Recall, and Average Precision.
 
-Data cleaning and missing-value imputation
-
-Feature scaling using RobustScaler
-
-Class imbalance handling using SMOTE
-
-Logistic Regression classification
-
-Hyperparameter tuning with GridSearchCV
-
-Model evaluation using precision, recall, F1-score and Average Precision
-
-Results
+📊 Baseline Results
 
 Accuracy: 52%
 
+Positive Recall: 0.71
+
+Positive Precision: 0.09
+
 Average Precision: 0.131
 
-Positive-class recall: 0.71
+Note: The current model detects most failures (71% recall) but produces a high number of false positives.
 
-Positive-class precision: 0.09
+📂 Dataset
 
-The model detects some manufacturing failures but produces a high number of false positives.
+Source: UCI SECOM Dataset
 
-Dataset
-
-UCI SECOM Dataset
-
-Status
-
-Experimental learning project. Further optimization and model comparison are future improvements.
